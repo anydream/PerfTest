@@ -13,4 +13,4 @@ for (let i = 2; i <= 80000; ++i)
 	}
 }
 let dl = new Date().getTime() - bt;
-print("v8(7.3.0.0) primesum(80000)=" + sum + ", " + dl + "ms");
+print("js primesum(80000)=" + sum + ", " + dl + "ms");

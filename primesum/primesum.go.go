@@ -19,5 +19,5 @@ func main() {
 	}
 	dl := time.Now().UnixNano() - bt;
 	dl = dl / int64(time.Millisecond);
-	fmt.Println("go(1.10.7) primesum(80000)=", sum, "," , dl, "ms");
+	fmt.Println("go primesum(80000)=", sum, "," , dl, "ms");
 }

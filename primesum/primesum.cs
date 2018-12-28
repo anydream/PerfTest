@@ -22,7 +22,7 @@ namespace testNetCore
 			}
 
 			int dl = Environment.TickCount - bt;
-			Console.WriteLine("c#(.netcore2.2) primesum(80000)={0}, {1}ms", sum, dl);
+			Console.WriteLine("c# primesum(80000)={0}, {1}ms", sum, dl);
 		}
 	}
 }

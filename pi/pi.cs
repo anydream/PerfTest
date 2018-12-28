@@ -25,7 +25,7 @@ namespace testNetCore
 			result = 4 * pi;
 
 			int dl = Environment.TickCount - bt;
-			Console.WriteLine("c#(.netcore2.2) pi(500000000)={0:0.0000000000}, {1}ms", result, dl);
+			Console.WriteLine("c# pi(500000000)={0:0.0000000000}, {1}ms", result, dl);
 		}
 	}
 }

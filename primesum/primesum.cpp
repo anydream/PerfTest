@@ -19,6 +19,6 @@ int main()
 	}
 	volatile int result = sum;
 	time_t dl = clock() - bt;
-	printf("msvc(19.16.27024.1) primesum(80000)=%d, %lldms\n", result, dl);
+	printf("msvc primesum(80000)=%d, %lldms\n", result, dl);
 	return 0;
 }

@@ -16,5 +16,5 @@ main()
 	double result = 4 * pi;
 
 	var dl = new DateTime.now().millisecondsSinceEpoch - bt;
-	print("dart(2.2.0) pi(500000000)=" + result.toStringAsFixed(10) + ", " + dl.toString() + "ms");
+	print("dart pi(500000000)=" + result.toStringAsFixed(10) + ", " + dl.toString() + "ms");
 }

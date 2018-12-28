@@ -19,6 +19,6 @@ int main()
 	volatile double result = 4 * pi;
 
 	time_t dl = clock() - bt;
-	printf("msvc(19.16.27024.1) pi(500000000)=%.10lf, %lldms\n", result, dl);
+	printf("msvc pi(500000000)=%.10lf, %lldms\n", result, dl);
 	return 0;
 }

@@ -14,4 +14,4 @@ let bt = new Date().getTime();
 	let result = 4 * pi;
 
 let dl = new Date().getTime() - bt;
-print("v8(7.3.0.0) pi(500000000)=" + result.toFixed(10) + ", " + dl + "ms");
+print("js pi(500000000)=" + result.toFixed(10) + ", " + dl + "ms");

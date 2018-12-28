@@ -20,6 +20,6 @@ public class pij
 		result = 4 * pi;
 
 		long dl = System.currentTimeMillis() - bt;
-		System.out.format("java(hotspot18.3) pi(500000000)=%.10f, %dms\n", result, dl);
+		System.out.format("java pi(500000000)=%.10f, %dms\n", result, dl);
 	}
 }

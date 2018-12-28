@@ -18,6 +18,6 @@ public class primesumj
 		}
 
 		long dl = System.currentTimeMillis() - bt;
-		System.out.format("java(hotspot18.3) primesum(80000)=%d, %dms\n", sum, dl);
+		System.out.format("java primesum(80000)=%d, %dms\n", sum, dl);
 	}
 }

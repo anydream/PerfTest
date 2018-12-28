@@ -16,7 +16,7 @@ namespace testNetCore
 			int bt = Environment.TickCount;
 			int result = fib(42);
 			int dl = Environment.TickCount - bt;
-			Console.WriteLine("c#(.netcore2.2) fib(42)={0}, {1}ms", result, dl);
+			Console.WriteLine("c# fib(42)={0}, {1}ms", result, dl);
 		}
 	}
 }

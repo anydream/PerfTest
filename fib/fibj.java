@@ -14,6 +14,6 @@ public class fibj
 		long bt = System.currentTimeMillis();
 		result = fib(42);
 		long dl = System.currentTimeMillis() - bt;
-		System.out.format("java(hotspot18.3) fib(42)=%d, %dms\n", result, dl);
+		System.out.format("java fib(42)=%d, %dms\n", result, dl);
 	}
 }
