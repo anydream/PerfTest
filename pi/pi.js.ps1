@@ -1,2 +1,2 @@
-powershell "Measure-Command { d8.exe pi.js | Write-Host}"
+powershell "Measure-Command { d8 pi.js | Write-Host}"
 pause

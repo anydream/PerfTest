@@ -1,2 +1,2 @@
-powershell "Measure-Command { dart.exe primesum.dart | Write-Host}"
+powershell "Measure-Command { dart primesum.dart | Write-Host}"
 pause

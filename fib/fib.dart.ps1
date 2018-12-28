@@ -1,2 +1,2 @@
-powershell "Measure-Command { dart.exe fib.dart | Write-Host}"
+powershell "Measure-Command { dart fib.dart | Write-Host}"
 pause

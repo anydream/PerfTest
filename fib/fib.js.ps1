@@ -1,2 +1,2 @@
-powershell "Measure-Command { d8.exe fib.js | Write-Host}"
+powershell "Measure-Command { d8 fib.js | Write-Host}"
 pause
