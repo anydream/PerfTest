@@ -1,2 +1,2 @@
-powershell "Measure-Command { dotnet primesum.cs.dll | Write-Host}"
+Measure-Command { dotnet primesum.cs.dll | Write-Host }
 pause

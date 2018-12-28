@@ -1,3 +1,3 @@
 javac pij.java
-powershell "Measure-Command { java pij | Write-Host}"
+Measure-Command { java pij | Write-Host }
 pause

@@ -1,2 +1,2 @@
-powershell "Measure-Command { luajit pi.lua | Write-Host}"
+Measure-Command { luajit pi.lua | Write-Host }
 pause

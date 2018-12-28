@@ -1,2 +1,2 @@
-powershell "Measure-Command { d8 primesum.js | Write-Host}"
+Measure-Command { d8 primesum.js | Write-Host }
 pause

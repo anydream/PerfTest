@@ -1,3 +1,3 @@
 javac primesumj.java
-powershell "Measure-Command { java primesumj | Write-Host}"
+Measure-Command { java primesumj | Write-Host }
 pause

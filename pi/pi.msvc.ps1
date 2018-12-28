@@ -1,2 +1,2 @@
-powershell "Measure-Command { .\pi.msvc.exe | Write-Host}"
+Measure-Command { .\pi.msvc.exe | Write-Host }
 pause
