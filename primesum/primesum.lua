@@ -1,4 +1,4 @@
-local bt = os.clock();
+local start = os.clock();
 local sum = 0;
 for i = 2, 80000, 1 do
 	for n = 2, i, 1 do
@@ -10,5 +10,5 @@ for i = 2, 80000, 1 do
 		end
 	end
 end
-local dl = os.clock();
-print("lua primesum(80000)=" .. sum .. ", " .. dl*1000 .. "ms");
+local elapsed = os.clock();
+print("lua primesum(80000)=" .. sum .. ", " .. elapsed*1000 .. "ms");

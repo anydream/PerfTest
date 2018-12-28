@@ -2,7 +2,7 @@ public class primesumj
 {
 	public static void main(String[] args)
 	{
-		long bt = System.currentTimeMillis();
+		long start = System.currentTimeMillis();
 		int sum = 0;
 		for (int i = 2; i <= 80000; ++i)
 		{
@@ -17,7 +17,7 @@ public class primesumj
 			}
 		}
 
-		long dl = System.currentTimeMillis() - bt;
-		System.out.format("java primesum(80000)=%d, %dms\n", sum, dl);
+		long elapsed = System.currentTimeMillis() - start;
+		System.out.format("java primesum(80000)=%d, %dms\n", sum, elapsed);
 	}
 }

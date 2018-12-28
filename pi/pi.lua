@@ -1,4 +1,4 @@
-local bt = os.clock();
+local start = os.clock();
 
 	local s = 1;
 	local pi = 0;
@@ -12,5 +12,5 @@ local bt = os.clock();
 	end
 	local result = 4 * pi;
 
-local dl = os.clock();
-print(string.format("lua pi(500000000)=%.10f, %fms\n", result, dl*1000));
+local elapsed = os.clock();
+print(string.format("lua pi(500000000)=%.10f, %fms\n", result, elapsed*1000));

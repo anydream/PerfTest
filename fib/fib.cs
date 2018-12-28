@@ -13,10 +13,10 @@ namespace testNetCore
 
 		private static void Main(string[] args)
 		{
-			int bt = Environment.TickCount;
+			int start = Environment.TickCount;
 			int result = fib(42);
-			int dl = Environment.TickCount - bt;
-			Console.WriteLine("c# fib(42)={0}, {1}ms", result, dl);
+			int elapsed = Environment.TickCount - start;
+			Console.WriteLine("c# fib(42)={0}, {1}ms", result, elapsed);
 		}
 	}
 }

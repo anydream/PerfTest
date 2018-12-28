@@ -3,7 +3,7 @@
 
 int main()
 {
-	time_t bt = clock();
+	time_t start = clock();
 	int sum = 0;
 	for (int i = 2; i <= 80000; ++i)
 	{
@@ -18,7 +18,7 @@ int main()
 		}
 	}
 	volatile int result = sum;
-	time_t dl = clock() - bt;
-	printf("msvc primesum(80000)=%d, %lldms\n", result, dl);
+	time_t elapsed = clock() - start;
+	printf("msvc primesum(80000)=%d, %lldms\n", result, elapsed);
 	return 0;
 }

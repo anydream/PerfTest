@@ -10,9 +10,9 @@ int fib(int n)
 
 int main()
 {
-	time_t bt = clock();
+	time_t start = clock();
 	volatile int result = fib(42);
-	time_t dl = clock() - bt;
-	printf("msvc fib(42)=%d, %lldms\n", result, dl);
+	time_t elapsed = clock() - start;
+	printf("msvc fib(42)=%d, %lldms\n", result, elapsed);
 	return 0;
 }

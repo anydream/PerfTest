@@ -5,7 +5,7 @@ import (
 	"time" )
 
 func main() {
-	bt := time.Now().UnixNano();
+	start := time.Now().UnixNano();
 	var sum int = 0;
 	for i := 2; i <= 80000; i+=1 {
 		for n := 2; n <= i; n+=1 {
@@ -17,7 +17,7 @@ func main() {
 			}
 		}
 	}
-	dl := time.Now().UnixNano() - bt;
-	dl = dl / int64(time.Millisecond);
-	fmt.Println("go primesum(80000)=", sum, "," , dl, "ms");
+	elapsed := time.Now().UnixNano() - start;
+	elapsed = elapsed / int64(time.Millisecond);
+	fmt.Println("go primesum(80000)=", sum, "," , elapsed, "ms");
 }

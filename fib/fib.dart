@@ -7,8 +7,8 @@ int fib(int n)
 
 main()
 {
-	var bt = new DateTime.now().millisecondsSinceEpoch;
+	var start = new DateTime.now().millisecondsSinceEpoch;
 	int result = fib(42);
-	var dl = new DateTime.now().millisecondsSinceEpoch - bt;
-	print("dart fib(42)=" + result.toString() + ", " + dl.toString() + "ms");
+	var elapsed = new DateTime.now().millisecondsSinceEpoch - start;
+	print("dart fib(42)=" + result.toString() + ", " + elapsed.toString() + "ms");
 }

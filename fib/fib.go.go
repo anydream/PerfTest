@@ -12,9 +12,9 @@ func fib(n int) int {
 }
 
 func main() {
-	bt := time.Now().UnixNano();
+	start := time.Now().UnixNano();
 	result := fib(42);
-	dl := time.Now().UnixNano() - bt;
-	dl = dl / int64(time.Millisecond);
-	fmt.Println("go fib(42)=", result, "," , dl, "ms");
+	elapsed := time.Now().UnixNano() - start;
+	elapsed = elapsed / int64(time.Millisecond);
+	fmt.Println("go fib(42)=", result, "," , elapsed, "ms");
 }

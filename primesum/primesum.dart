@@ -1,6 +1,6 @@
 main()
 {
-	var bt = new DateTime.now().millisecondsSinceEpoch;
+	var start = new DateTime.now().millisecondsSinceEpoch;
 	int sum = 0;
 	for (int i = 2; i <= 80000; ++i)
 	{
@@ -14,6 +14,6 @@ main()
 			}
 		}
 	}
-	var dl = new DateTime.now().millisecondsSinceEpoch - bt;
-	print("dart primesum(80000)=" + sum.toString() + ", " + dl.toString() + "ms");
+	var elapsed = new DateTime.now().millisecondsSinceEpoch - start;
+	print("dart primesum(80000)=" + sum.toString() + ", " + elapsed.toString() + "ms");
 }

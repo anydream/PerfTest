@@ -11,9 +11,9 @@ public class fibj
 
 	public static void main(String[] args)
 	{
-		long bt = System.currentTimeMillis();
+		long start = System.currentTimeMillis();
 		result = fib(42);
-		long dl = System.currentTimeMillis() - bt;
-		System.out.format("java fib(42)=%d, %dms\n", result, dl);
+		long elapsed = System.currentTimeMillis() - start;
+		System.out.format("java fib(42)=%d, %dms\n", result, elapsed);
 	}
 }

@@ -3,7 +3,7 @@
 
 int main()
 {
-	time_t bt = clock();
+	time_t start = clock();
 
 	double s = 1;
 	double pi = 0;
@@ -18,7 +18,7 @@ int main()
 	}
 	volatile double result = 4 * pi;
 
-	time_t dl = clock() - bt;
-	printf("msvc pi(500000000)=%.10lf, %lldms\n", result, dl);
+	time_t elapsed = clock() - start;
+	printf("msvc pi(500000000)=%.10lf, %lldms\n", result, elapsed);
 	return 0;
 }

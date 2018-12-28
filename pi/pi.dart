@@ -1,6 +1,6 @@
 main()
 {
-	var bt = new DateTime.now().millisecondsSinceEpoch;
+	var start = new DateTime.now().millisecondsSinceEpoch;
 
 	double s = 1;
 	double pi = 0;
@@ -15,6 +15,6 @@ main()
 	}
 	double result = 4 * pi;
 
-	var dl = new DateTime.now().millisecondsSinceEpoch - bt;
-	print("dart pi(500000000)=" + result.toStringAsFixed(10) + ", " + dl.toString() + "ms");
+	var elapsed = new DateTime.now().millisecondsSinceEpoch - start;
+	print("dart pi(500000000)=" + result.toStringAsFixed(10) + ", " + elapsed.toString() + "ms");
 }

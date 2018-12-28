@@ -4,7 +4,7 @@ public class pij
 	
 	public static void main(String[] args)
 	{
-		long bt = System.currentTimeMillis();
+		long start = System.currentTimeMillis();
 	
 		double s = 1;
 		double pi = 0;
@@ -19,7 +19,7 @@ public class pij
 		}
 		result = 4 * pi;
 
-		long dl = System.currentTimeMillis() - bt;
-		System.out.format("java pi(500000000)=%.10f, %dms\n", result, dl);
+		long elapsed = System.currentTimeMillis() - start;
+		System.out.format("java pi(500000000)=%.10f, %dms\n", result, elapsed);
 	}
 }

@@ -1,4 +1,4 @@
-let bt = new Date().getTime();
+let start = new Date().getTime();
 let sum = 0;
 for (let i = 2; i <= 80000; ++i)
 {
@@ -12,5 +12,5 @@ for (let i = 2; i <= 80000; ++i)
 		}
 	}
 }
-let dl = new Date().getTime() - bt;
-print("js primesum(80000)=" + sum + ", " + dl + "ms");
+let elapsed = new Date().getTime() - start;
+print("js primesum(80000)=" + sum + ", " + elapsed + "ms");

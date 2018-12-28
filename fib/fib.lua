@@ -5,8 +5,8 @@ function fib(n)
 	return fib(n - 1) + fib(n - 2);
 end
 
-local bt = os.clock();
+local start = os.clock();
 local result = fib(42);
-local dl = os.clock();
+local elapsed = os.clock();
 
-print("lua fib(42)=" .. result .. ", " .. dl*1000 .. "ms");
+print("lua fib(42)=" .. result .. ", " .. elapsed*1000 .. "ms");

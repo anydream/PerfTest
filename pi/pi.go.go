@@ -5,7 +5,7 @@ import (
 	"time" )
 
 func main() {
-	bt := time.Now().UnixNano();
+	start := time.Now().UnixNano();
 
 	var s float64 = 1;
 	var pi float64 = 0;
@@ -19,7 +19,7 @@ func main() {
 	}
 	var result float64 = 4 * pi;
 
-	dl := time.Now().UnixNano() - bt;
-	dl = dl / int64(time.Millisecond);
-	fmt.Printf("go pi(500000000)=%.10f, %dms\n", result, dl);
+	elapsed := time.Now().UnixNano() - start;
+	elapsed = elapsed / int64(time.Millisecond);
+	fmt.Printf("go pi(500000000)=%.10f, %dms\n", result, elapsed);
 }

@@ -8,7 +8,7 @@ namespace testNetCore
 
 		private static void Main(string[] args)
 		{
-			int bt = Environment.TickCount;
+			int start = Environment.TickCount;
 
 			double s = 1;
 			double pi = 0;
@@ -24,8 +24,8 @@ namespace testNetCore
 
 			result = 4 * pi;
 
-			int dl = Environment.TickCount - bt;
-			Console.WriteLine("c# pi(500000000)={0:0.0000000000}, {1}ms", result, dl);
+			int elapsed = Environment.TickCount - start;
+			Console.WriteLine("c# pi(500000000)={0:0.0000000000}, {1}ms", result, elapsed);
 		}
 	}
 }

@@ -6,7 +6,7 @@ namespace testNetCore
 	{
 		private static void Main(string[] args)
 		{
-			int bt = Environment.TickCount;
+			int start = Environment.TickCount;
 			int sum = 0;
 			for (int i = 2; i <= 80000; ++i)
 			{
@@ -21,8 +21,8 @@ namespace testNetCore
 				}
 			}
 
-			int dl = Environment.TickCount - bt;
-			Console.WriteLine("c# primesum(80000)={0}, {1}ms", sum, dl);
+			int elapsed = Environment.TickCount - start;
+			Console.WriteLine("c# primesum(80000)={0}, {1}ms", sum, elapsed);
 		}
 	}
 }

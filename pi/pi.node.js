@@ -1,5 +1,5 @@
 'use strict';
-let bt = new Date().getTime();
+let start = new Date().getTime();
 
 	let s = 1;
 	let pi = 0;
@@ -14,5 +14,5 @@ let bt = new Date().getTime();
 	}
 	let result = 4 * pi;
 
-let dl = new Date().getTime() - bt;
-console.log(`node-v8(${process.version}) pi(500000000)=${result.toFixed(10)}, ${dl}ms`);
+let elapsed = new Date().getTime() - start;
+console.log(`node-v8(${process.version}) pi(500000000)=${result.toFixed(10)}, ${elapsed}ms`);

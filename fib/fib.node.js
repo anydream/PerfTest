@@ -5,8 +5,8 @@ function fib(n)
 		return n;
 	return fib(n - 1) + fib(n - 2);
 }
-let bt = new Date().getTime();
+let start = new Date().getTime();
 let result = fib(42);
-let dl = new Date().getTime() - bt;
+let elapsed = new Date().getTime() - start;
 
-console.log(`node-v8(${process.version}) fib(42)=${result}, ${dl}ms`);
+console.log(`node-v8(${process.version}) fib(42)=${result}, ${elapsed}ms`);
