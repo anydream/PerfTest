@@ -18,6 +18,6 @@ public class primesumj
 		}
 
 		long elapsed = System.currentTimeMillis() - start;
-		System.out.format("java primesum(80000)=%d, %dms\n", sum, elapsed);
+		System.out.format("java primesum(80000)=%d, elapsed=%dms\n", sum, elapsed);
 	}
 }

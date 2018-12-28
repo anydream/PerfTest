@@ -8,4 +8,4 @@ let start = new Date().getTime();
 let result = fib(42);
 let elapsed = new Date().getTime() - start;
 
-print("js fib(42)=" + result + ", " + elapsed + "ms");
+print("js fib(42)=" + result + ", elapsed=" + elapsed + "ms");

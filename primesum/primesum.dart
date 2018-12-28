@@ -15,5 +15,5 @@ main()
 		}
 	}
 	var elapsed = new DateTime.now().millisecondsSinceEpoch - start;
-	print("dart primesum(80000)=" + sum.toString() + ", " + elapsed.toString() + "ms");
+	print("dart primesum(80000)=" + sum.toString() + ", elapsed=" + elapsed.toString() + "ms");
 }

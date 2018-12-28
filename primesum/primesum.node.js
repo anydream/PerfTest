@@ -14,4 +14,4 @@ for (let i = 2; i <= 80000; ++i)
 	}
 }
 let elapsed = new Date().getTime() - start;
-console.log(`node-v8(${process.version}) primesum(80000)=${sum}, ${elapsed}ms`);
+console.log(`node-v8(${process.version}) primesum(80000)=${sum}, elapsed=${elapsed}ms`);

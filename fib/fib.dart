@@ -10,5 +10,5 @@ main()
 	var start = new DateTime.now().millisecondsSinceEpoch;
 	int result = fib(42);
 	var elapsed = new DateTime.now().millisecondsSinceEpoch - start;
-	print("dart fib(42)=" + result.toString() + ", " + elapsed.toString() + "ms");
+	print("dart fib(42)=" + result.toString() + ", elapsed=" + elapsed.toString() + "ms");
 }

@@ -13,4 +13,4 @@ for (let i = 2; i <= 80000; ++i)
 	}
 }
 let elapsed = new Date().getTime() - start;
-print("js primesum(80000)=" + sum + ", " + elapsed + "ms");
+print("js primesum(80000)=" + sum + ", elapsed=" + elapsed + "ms");

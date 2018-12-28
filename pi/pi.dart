@@ -16,5 +16,5 @@ main()
 	double result = 4 * pi;
 
 	var elapsed = new DateTime.now().millisecondsSinceEpoch - start;
-	print("dart pi(500000000)=" + result.toStringAsFixed(10) + ", " + elapsed.toString() + "ms");
+	print("dart pi(500000000)=" + result.toStringAsFixed(10) + ", elapsed=" + elapsed.toString() + "ms");
 }

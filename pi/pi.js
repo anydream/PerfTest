@@ -14,4 +14,4 @@ let start = new Date().getTime();
 	let result = 4 * pi;
 
 let elapsed = new Date().getTime() - start;
-print("js pi(500000000)=" + result.toFixed(10) + ", " + elapsed + "ms");
+print("js pi(500000000)=" + result.toFixed(10) + ", elapsed=" + elapsed + "ms");

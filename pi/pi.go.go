@@ -21,5 +21,5 @@ func main() {
 
 	elapsed := time.Now().UnixNano() - start;
 	elapsed = elapsed / int64(time.Millisecond);
-	fmt.Printf("go pi(500000000)=%.10f, %dms\n", result, elapsed);
+	fmt.Printf("go pi(500000000)=%.10f, elapsed=%dms\n", result, elapsed);
 }

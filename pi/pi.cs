@@ -25,7 +25,7 @@ namespace testNetCore
 			result = 4 * pi;
 
 			int elapsed = Environment.TickCount - start;
-			Console.WriteLine("c# pi(500000000)={0:0.0000000000}, {1}ms", result, elapsed);
+			Console.WriteLine("c# pi(500000000)={0:0.0000000000}, elapsed={1}ms", result, elapsed);
 		}
 	}
 }

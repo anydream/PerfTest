@@ -9,4 +9,4 @@ let start = new Date().getTime();
 let result = fib(42);
 let elapsed = new Date().getTime() - start;
 
-console.log(`node-v8(${process.version}) fib(42)=${result}, ${elapsed}ms`);
+console.log(`node-v8(${process.version}) fib(42)=${result}, elapsed=${elapsed}ms`);

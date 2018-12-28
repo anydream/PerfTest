@@ -16,7 +16,7 @@ namespace testNetCore
 			int start = Environment.TickCount;
 			int result = fib(42);
 			int elapsed = Environment.TickCount - start;
-			Console.WriteLine("c# fib(42)={0}, {1}ms", result, elapsed);
+			Console.WriteLine("c# fib(42)={0}, elapsed={1}ms", result, elapsed);
 		}
 	}
 }

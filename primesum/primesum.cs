@@ -22,7 +22,7 @@ namespace testNetCore
 			}
 
 			int elapsed = Environment.TickCount - start;
-			Console.WriteLine("c# primesum(80000)={0}, {1}ms", sum, elapsed);
+			Console.WriteLine("c# primesum(80000)={0}, elapsed={1}ms", sum, elapsed);
 		}
 	}
 }

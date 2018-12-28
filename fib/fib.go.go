@@ -16,5 +16,5 @@ func main() {
 	result := fib(42);
 	elapsed := time.Now().UnixNano() - start;
 	elapsed = elapsed / int64(time.Millisecond);
-	fmt.Println("go fib(42)=", result, "," , elapsed, "ms");
+	fmt.Printf("go fib(42)=%d, elapsed=%dms\n", result, elapsed);
 }

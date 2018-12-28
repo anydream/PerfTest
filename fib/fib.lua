@@ -9,4 +9,4 @@ local start = os.clock();
 local result = fib(42);
 local elapsed = os.clock();
 
-print("lua fib(42)=" .. result .. ", " .. elapsed*1000 .. "ms");
+print("lua fib(42)=" .. result .. ", elapsed=" .. elapsed*1000 .. "ms");
