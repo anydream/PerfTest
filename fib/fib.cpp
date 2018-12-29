@@ -13,6 +13,6 @@ int main()
 	time_t start = clock();
 	volatile int result = fib(42);
 	time_t elapsed = clock() - start;
-	printf("msvc fib(42)=%d, elapsed=%lldms\n", result, elapsed);
+	printf("c++ fib(42)=%d, elapsed=%lldms\n", result, elapsed);
 	return 0;
 }

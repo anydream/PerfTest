@@ -19,6 +19,6 @@ int main()
 	volatile double result = 4 * pi;
 
 	time_t elapsed = clock() - start;
-	printf("msvc pi(500000000)=%.10lf, elapsed=%lldms\n", result, elapsed);
+	printf("c++ pi(500000000)=%.10lf, elapsed=%lldms\n", result, elapsed);
 	return 0;
 }
