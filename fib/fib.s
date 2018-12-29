@@ -11,25 +11,23 @@
 # %bb.0:
 	push	rsi
 	push	rdi
-	mov	esi, ecx
-	cmp	ecx, 1
-	jg	.LBB0_1
+	cmp		ecx, 1
+	jg		.LBB0_1
 # %bb.2:
-	mov	eax, esi
-	pop	rdi
-	pop	rsi
+	mov		eax, ecx
+	pop		rdi
+	pop		rsi
 	ret
 .LBB0_1:
-	lea	ecx, [rsi - 2]
+	mov		esi, ecx
+	lea		ecx, [ecx-2]
 	call	"?fib@@YAHH@Z"
-	mov	edi, eax
-	add	esi, -1
-	mov	ecx, esi
+	mov		edi, eax
+	lea		ecx, [esi-1]
 	call	"?fib@@YAHH@Z"
-	add	eax, edi
-
-	pop	rdi
-	pop	rsi
+	add		eax, edi
+	pop		rdi
+	pop		rsi
 	ret
 	.text
 	.seh_endproc
@@ -127,7 +125,7 @@ __local_stdio_printf_options:           # @__local_stdio_printf_options
 	.section	.rdata,"dr",discard,"??_C@_0CA@PPOMKJLO@c?$CL?$CL?5fib?$CI42?$CJ?$DN?$CFd?0?5elapsed?$DN?$CFlldms?6?$AA@"
 	.globl	"??_C@_0CA@PPOMKJLO@c?$CL?$CL?5fib?$CI42?$CJ?$DN?$CFd?0?5elapsed?$DN?$CFlldms?6?$AA@" # @"??_C@_0CA@PPOMKJLO@c?$CL?$CL?5fib?$CI42?$CJ?$DN?$CFd?0?5elapsed?$DN?$CFlldms?6?$AA@"
 "??_C@_0CA@PPOMKJLO@c?$CL?$CL?5fib?$CI42?$CJ?$DN?$CFd?0?5elapsed?$DN?$CFlldms?6?$AA@":
-	.asciz	"c++ fib(42)=%d, elapsed=%lldms\n"
+	.asciz	"x64asm fib(42)=%d, elapsed=%lldms\n"
 
 	.section	.bss,"bw",discard,"?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA"
 	.globl	"?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA" # @"?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA"
