@@ -9,26 +9,23 @@
 "?fib@@YAHH@Z":                         # @"?fib@@YAHH@Z"
 .seh_proc "?fib@@YAHH@Z"
 # %bb.0:
-	push	rsi
-	push	rdi
-	cmp		ecx, 1
-	jg		.LBB0_1
-# %bb.2:
-	mov		eax, ecx
-	pop		rdi
-	pop		rsi
+    mov eax, 1
+    sub ecx, eax
+    jle f
+
+    push rdi
+    mov edi, ecx
+    sub ecx, eax
+    call "?fib@@YAHH@Z"
+    mov ecx, edi
+    mov edi, eax
+    call "?fib@@YAHH@Z"
+    add eax, edi
+    pop rdi
 	ret
-.LBB0_1:
-	mov		esi, ecx
-	lea		ecx, [ecx-2]
-	call	"?fib@@YAHH@Z"
-	mov		edi, eax
-	lea		ecx, [esi-1]
-	call	"?fib@@YAHH@Z"
-	add		eax, edi
-	pop		rdi
-	pop		rsi
-	ret
+f:
+	add eax, ecx
+    ret
 	.text
 	.seh_endproc
                                         # -- End function
