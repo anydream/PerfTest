@@ -1,0 +1,72 @@
+[pi.cs.netcore]
+c# pi(500000000)=3.1415926516, elapsed=2230ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.3784548         2378.4548
+
+
+[pi.go]
+go pi(500000000)=3.1415926516, elapsed=2235ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.4349454         2434.9454
+
+
+[pi.js.node]
+node-v8(v11.6.0) pi(500000000)=3.1415926516, elapsed=2238ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.6671171         2667.1171
+
+
+
+[pi.clang]
+c++ pi(500000000)=3.1415926516, elapsed=2242ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.3063927         2306.3927
+
+
+[pi.luajit]
+lua pi(500000000)=3.1415926556, elapsed=2252.000000ms
+
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+    2.344905          2344.905
+
+
+[pi.msvc]
+msvc pi(500000000)=3.1415926516, elapsed=2258ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.3417672         2341.7672
+
+
+[pij.java]
+java pi(500000000)=3.1415926516, elapsed=2270ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   3.6220974         3622.0974
+
+
+[pi.dart]
+dart pi(500000000)=3.1415926516, elapsed=6526ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+    7.393328          7393.328
+
+
+[pi.js.d8]
+js pi(500000000)=3.1415926516, elapsed=30096ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+  30.7550455        30755.0455
