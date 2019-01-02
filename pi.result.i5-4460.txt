@@ -1,72 +1,78 @@
-[pi.cs.netcore]
-c# pi(500000000)=3.1415926516, elapsed=2230ms
-
-TotalSeconds TotalMilliseconds
------------- -----------------
-   2.3784548         2378.4548
-
-
-[pi.go]
-go pi(500000000)=3.1415926516, elapsed=2235ms
-
-TotalSeconds TotalMilliseconds
------------- -----------------
-   2.4349454         2434.9454
-
-
 [pi.js.node]
-node-v8(v11.6.0) pi(500000000)=3.1415926516, elapsed=2238ms
+node-v8(v11.6.0) pi(500000000)=3.1415926516, elapsed=2134ms
 
 TotalSeconds TotalMilliseconds
 ------------ -----------------
-   2.6671171         2667.1171
-
-
-
-[pi.clang]
-c++ pi(500000000)=3.1415926516, elapsed=2242ms
-
-TotalSeconds TotalMilliseconds
------------- -----------------
-   2.3063927         2306.3927
-
-
-[pi.luajit]
-lua pi(500000000)=3.1415926556, elapsed=2252.000000ms
-
-
-TotalSeconds TotalMilliseconds
------------- -----------------
-    2.344905          2344.905
+   2.3473783         2347.3783
 
 
 [pi.msvc]
-msvc pi(500000000)=3.1415926516, elapsed=2258ms
+msvc pi(500000000)=3.1415926516, elapsed=2147ms
 
 TotalSeconds TotalMilliseconds
 ------------ -----------------
-   2.3417672         2341.7672
+   2.1981796         2198.1796
+
+
+[pi.gcc]
+c++ pi(500000000)=3.1415926516, elapsed=2150ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.2177449         2217.7449
+
+
+[pi.cs.netcore]
+c# pi(500000000)=3.1415926516, elapsed=2153ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.2928592         2292.8592
+
+
+[pi.luajit]
+lua pi(500000000)=3.1415926556, elapsed=2158.000000ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.2133309         2213.3309
 
 
 [pij.java]
-java pi(500000000)=3.1415926516, elapsed=2270ms
+java pi(500000000)=3.1415926516, elapsed=2170ms
 
 TotalSeconds TotalMilliseconds
 ------------ -----------------
-   3.6220974         3622.0974
+   2.4105949         2410.5949
+
+
+[pi.clang]
+c++ pi(500000000)=3.1415926516, elapsed=2194ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.2606373         2260.6373
+
+
+[pi.go]
+go pi(500000000)=3.1415926516, elapsed=2206ms
+
+TotalSeconds TotalMilliseconds
+------------ -----------------
+   2.2658304         2265.8304
 
 
 [pi.dart]
-dart pi(500000000)=3.1415926516, elapsed=6526ms
+dart pi(500000000)=3.1415926516, elapsed=5750ms
 
 TotalSeconds TotalMilliseconds
 ------------ -----------------
-    7.393328          7393.328
+   6.0628332         6062.8332
 
 
 [pi.js.d8]
-js pi(500000000)=3.1415926516, elapsed=30096ms
+js pi(500000000)=3.1415926516, elapsed=30435ms
 
 TotalSeconds TotalMilliseconds
 ------------ -----------------
-  30.7550455        30755.0455
+  30.5551853        30555.1853
